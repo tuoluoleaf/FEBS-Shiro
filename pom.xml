@@ -34,6 +34,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <thymeleaf-extras-shiro.version>2.0.0</thymeleaf-extras-shiro.version>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <fastjson.version>1.2.78</fastjson.version>
         <package-time>${maven.build.timestamp}</package-time>
     </properties>
 
@@ -75,6 +76,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
         <!-- redis连接池 -->
@@ -225,6 +230,13 @@
             <groupId>xml-apis</groupId>
             <artifactId>xml-apis</artifactId>
             <version>${xml-apis.version}</version>
+        </dependency>
+
+        <!-- json -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
         </dependency>
     </dependencies>
 
